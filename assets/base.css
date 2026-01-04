@@ -4080,3 +4080,31 @@ text-component {
   font-size: 1.75rem !important;
   transform: scale(1.05);
 }
+
+.media-gallery--carousel slideshow-arrows {
+  align-items: center;
+  padding-inline: var(--padding-md);
+}
+
+.media-gallery--carousel slideshow-arrows .slideshow-control {
+  background: none !important;
+  box-shadow: none !important;
+  color: white !important;
+  padding-inline: var(--padding-sm) !important;
+}
+
+.media-gallery--carousel slideshow-arrows .slideshow-control svg {
+  stroke: white;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.media-gallery--carousel slideshow-arrows .slideshow-control--shape-circle,
+.media-gallery--carousel slideshow-arrows .slideshow-control--shape-square {
+  background: none !important;
+  border: none !important;
+}
+
+.media-gallery--carousel slideshow-arrows .slideshow-control .svg-wrapper {
+  background: none !important;
+}
