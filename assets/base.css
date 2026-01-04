@@ -4037,3 +4037,16 @@ text-component {
     font-size: max(1rem, 100%);
   }
 }
+
+.collection-card .text-block,
+.collection-card .text-block > *,
+.collection-card .text-block h1,
+.collection-card .text-block h2,
+.collection-card .text-block h3,
+.collection-card .text-block h4,
+.collection-card .text-block h5,
+.collection-card .text-block h6,
+.collection-card .text-block p {
+  color: #ffffff !important;
+  font-weight: bold !important;
+}
