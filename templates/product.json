@@ -24,7 +24,7 @@
             "slideshow_mobile_controls_style": "counter",
             "thumbnail_position": "right",
             "thumbnail_width": 44,
-            "aspect_ratio": "1/1",
+            "aspect_ratio": "4/3",
             "constrain_to_viewport": true,
             "media_fit": "cover",
             "media_radius": 0,
@@ -32,7 +32,7 @@
             "zoom": true,
             "video_loop": false,
             "hide_variants": true,
-            "padding-block-start": 0,
+            "padding-block-start": 48,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
