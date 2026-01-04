@@ -39,6 +39,22 @@
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
+    <div class="page-load-overlay">
+      {% if settings.logo != blank %}
+        <img
+          src="{{ settings.logo | image_url: width: 400 }}"
+          alt="{{ shop.name }}"
+          class="page-load-logo"
+          width="{{ settings.logo.width }}"
+          height="{{ settings.logo.height }}"
+        >
+      {% else %}
+        <div class="page-load-logo" style="font-size: 2rem; font-weight: 600;">{{ shop.name }}</div>
+      {% endif %}
+    </div>
+
+    <script src="{{ 'page-load-animation.js' | asset_url }}" defer></script>
+
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
     <div id="header-group">
       {% sections 'header-group' %}
