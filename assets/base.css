@@ -4057,21 +4057,12 @@ text-component {
   overflow: hidden;
 }
 
-.collection-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  backdrop-filter: blur(0px);
-  transition: backdrop-filter 0.3s ease;
-  pointer-events: none;
-  z-index: 1;
+.collection-card img {
+  transition: filter 0.3s ease;
 }
 
-.collection-card:hover::after {
-  backdrop-filter: blur(8px);
+.collection-card:hover img {
+  filter: blur(8px);
 }
 
 .collection-card .text-block {
