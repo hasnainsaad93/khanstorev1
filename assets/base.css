@@ -4091,12 +4091,16 @@ text-component {
   box-shadow: none !important;
   color: white !important;
   padding-inline: var(--padding-sm) !important;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 .media-gallery--carousel slideshow-arrows .slideshow-control svg {
-  stroke: white;
-  stroke-width: 2.5;
-  fill: none;
+  --icon-stroke-width: 2.5px;
+}
+
+.media-gallery--carousel slideshow-arrows .slideshow-control svg path {
+  stroke: white !important;
+  stroke-width: 2.5px !important;
 }
 
 .media-gallery--carousel slideshow-arrows .slideshow-control--shape-circle,
