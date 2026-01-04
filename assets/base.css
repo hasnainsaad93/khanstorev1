@@ -4049,4 +4049,43 @@ text-component {
 .collection-card .text-block p {
   color: #ffffff !important;
   font-weight: bold !important;
+  transition: font-size 0.3s ease, transform 0.3s ease;
+}
+
+.collection-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.collection-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(0px);
+  transition: backdrop-filter 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.collection-card:hover::after {
+  backdrop-filter: blur(8px);
+}
+
+.collection-card .text-block {
+  position: relative;
+  z-index: 2;
+}
+
+.collection-card:hover .text-block h1,
+.collection-card:hover .text-block h2,
+.collection-card:hover .text-block h3,
+.collection-card:hover .text-block h4,
+.collection-card:hover .text-block h5,
+.collection-card:hover .text-block h6,
+.collection-card:hover .text-block p {
+  font-size: 1.75rem !important;
+  transform: scale(1.05);
 }
