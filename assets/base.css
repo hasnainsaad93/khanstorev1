@@ -1997,48 +1997,6 @@ deferred-media iframe {
 deferred-media[data-media-loaded] img {
   opacity: 0;
 }
-/* Force collection name style for collection-list section */
-.collection-card__content .collection-title {
-  color: #fff !important;
-  background: none !important;
-  text-align: center !important;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  width: 100% !important;
-}
-/* Shop by collection custom styles */
-.collection-links__link .text-block {
-  color: #fff !important;
-  background: none !important;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-size: 1.2em;
-  transition: font-size 0.3s cubic-bezier(.4,0,.2,1);
-}
-
-.collection-links__link {
-  background: none !important;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s cubic-bezier(.4,0,.2,1);
-}
-
-.collection-links__link:hover .text-block {
-  font-size: 1.5em;
-}
-
-.collection-links__image img {
-  transition: filter 0.3s cubic-bezier(.4,0,.2,1);
-}
-
-.collection-links__link:hover .collection-links__image img {
-  filter: blur(4px);
-}
 
 .deferred-media__poster-icon,
 .video-placeholder-wrapper__poster-icon {

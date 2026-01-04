@@ -228,19 +228,4 @@
       margin-left: var(--page-margin);
     }
   }
-
-  /* Ensure all product grid items have the same size by fixing aspect ratio */
-  .product-grid--grid .card-gallery {
-    /* Override the adapt aspect ratio with a fixed square ratio for consistent box sizes */
-    --gallery-aspect-ratio: 1 !important;
-  }
-
-  .product-grid--grid .product-media-container {
-    aspect-ratio: 1 !important;
-  }
-
-  /* Ensure images fill the container properly while maintaining aspect ratio */
-  .product-grid--grid .product-media-container img {
-    object-fit: cover;
-  }
 {% endstylesheet %}

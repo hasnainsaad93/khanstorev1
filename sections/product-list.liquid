@@ -80,23 +80,6 @@
   </div>
 </div>
 
-{% stylesheet %}
-  /* Ensure all product grid items have the same size by fixing aspect ratio */
-  .section-resource-list .resource-list--grid .card-gallery {
-    /* Use portrait ratio (4:5) for smaller boxes to prevent image blur */
-    --gallery-aspect-ratio: 4 / 5 !important;
-  }
-
-  .section-resource-list .resource-list--grid .product-media-container {
-    aspect-ratio: 4 / 5 !important;
-  }
-
-  /* Ensure images fill the container properly while maintaining aspect ratio */
-  .section-resource-list .resource-list--grid .product-media-container img {
-    object-fit: cover;
-  }
-{% endstylesheet %}
-
 {% schema %}
 {
   "name": "t:names.product_list",

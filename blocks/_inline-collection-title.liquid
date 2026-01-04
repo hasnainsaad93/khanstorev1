@@ -21,7 +21,7 @@
       {% if block_settings.weight != blank %}custom-font-weight{% endif %}
       {% if block_settings.font_size != blank %}custom-font-size{% endif %}
     "
-      style="{% render 'typography-style', preset: 'custom', settings: block_settings, type: 'heading' %}; color: #fff !important; background: none !important; text-align: center; display: flex; justify-content: center; align-items: center; width: 100%;"
+    style="{% render 'typography-style', preset: 'custom', settings: block_settings, type: 'heading' %}"
     {{ block.shopify_attributes }}
   >
     <span>{{ collection_title }}</span>{{ suffix }}
